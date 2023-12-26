@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<!--         FIRST TIME LOGIN CONTROLLER JOBSEEKER-->
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job_portal.ReSignUpControllerJobSeeker">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="273.0" style="-fx-background-color: #0589ff;" BorderPane.alignment="CENTER" />
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="336.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="textfield" layoutX="103.0" layoutY="81.0" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                <PasswordField fx:id="passwordfield" layoutX="103.0" layoutY="120.0" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+                <Label layoutX="23.0" layoutY="95.0" text="Username" />
+                <Label layoutX="25.0" layoutY="132.0" text="Password" />
+                <Button fx:id="signup" layoutX="139.0" layoutY="259.0" onAction="#handleRegister"> Signup </Button>
+            <Label layoutX="25.0" layoutY="167.0" text="Mailid" />
+            <TextField fx:id="mailid" layoutX="103.0" layoutY="153.0" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label layoutX="27.0" layoutY="200.0" text="PhoneNo" />
+            <TextField fx:id="phoneno" layoutX="103.0" layoutY="186.0" style="-fx-background-color: transparent; -fx-border-color: #0589ff; -fx-border-width: 0px 0px 2px 0px;" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

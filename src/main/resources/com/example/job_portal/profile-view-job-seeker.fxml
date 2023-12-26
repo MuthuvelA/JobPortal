@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job_portal.ProfileviewjobseekerController">
+        <AnchorPane layoutY="-3.0" prefHeight="614.0" prefWidth="253.0" style="-fx-background-color: #1D2026;">
+                <Pane layoutX="-8.0" layoutY="-16.0" prefHeight="80.0" prefWidth="261.0" style="-fx-background-color: #1D2026;">
+                        <Label layoutX="33.0" layoutY="40.0" text="PROFILE PAGE" textFill="WHITE">
+                            <font>
+                                <Font name="FreeSerif Bold" size="26.0" />
+                            </font>
+                        </Label>
+                </Pane>
+                <Button layoutX="90.0" layoutY="192.0" mnemonicParsing="false" text="Edit Profile" />
+                <Circle fill="#f6f7f8" layoutX="123.0" layoutY="126.0" radius="56.0" stroke="BLACK" strokeType="INSIDE" />
+                <ImageView fitHeight="72.0" fitWidth="76.0" layoutX="87.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@01.jpg" />
+                </ImageView>
+                <TextField fx:id="emailidd" layoutX="29.0" layoutY="352.0" prefHeight="34.0" prefWidth="194.0" promptText="Enter Your Email" />
+                <TextField fx:id="phoneid" layoutX="29.0" layoutY="466.0" prefHeight="34.0" prefWidth="194.0" promptText="Phone No" />
+                <TextField fx:id="addressid" layoutX="29.0" layoutY="538.0" prefHeight="34.0" prefWidth="194.0" promptText="Address" />
+                  <TextField fx:id="nameid" layoutX="29.0" layoutY="238.0" prefHeight="34.0" prefWidth="194.0" promptText="Enter Your Name" />
+                  <TextField fx:id="ageid" layoutX="29.0" layoutY="290.0" prefHeight="34.0" prefWidth="194.0" promptText="Enter Your Age" />
+                  <TextField fx:id="genid" layoutX="29.0" layoutY="408.0" prefHeight="34.0" prefWidth="194.0" promptText="Gender" />
+                
+        </AnchorPane>
+        <Label fx:id="aboutid" layoutX="266.0" layoutY="32.0" prefHeight="34.0" prefWidth="167.0" text="About" textFill="#0a0a0a">
+            <font>
+                <Font name="Lato Light" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="qualificationid" layoutX="259.0" layoutY="156.0" prefHeight="34.0" prefWidth="167.0" text="Qualification" textFill="#0d0d0d">
+            <font>
+                <Font name="Lato Light" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="skillsid" layoutX="266.0" layoutY="404.0" prefHeight="34.0" prefWidth="167.0" text="Skills" textFill="#101011">
+            <font>
+                <Font name="Lato Light" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="268.0" layoutY="275.0" prefHeight="34.0" prefWidth="167.0" text="Experience" textFill="#0a0a0a">
+            <font>
+                <Font name="Lato Light" size="18.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="aboutiid" layoutX="267.0" layoutY="71.0" prefHeight="80.0" prefWidth="503.0" promptText="ABOUT" />
+        <TextArea fx:id="qualificationiid" layoutX="267.0" layoutY="190.0" prefHeight="80.0" prefWidth="503.0" promptText="QUALIFICATION" />
+        <TextArea fx:id="experienceid" layoutX="264.0" layoutY="432.0" prefHeight="80.0" prefWidth="503.0" promptText="SKILLS" />
+        <TextArea fx:id="skillssid" layoutX="267.0" layoutY="309.0" prefHeight="80.0" prefWidth="503.0" promptText="EXPERIENCE" />
+    <Button fx:id="saveid" layoutX="657.0" layoutY="556.0" onAction="#handleSave" text="Save">Save</Button>
+   <Button fx:id="backbutton" layoutX="415.0" layoutY="20.0" mnemonicParsing="false" onAction="#HandleBack" text="back" />
+   <TextArea fx:id="resumeid" layoutX="268.0" layoutY="549.0" prefHeight="26.0" prefWidth="194.0" promptText="RESUMELINK" />
+   <Label layoutX="266.0" layoutY="512.0" prefHeight="34.0" prefWidth="167.0" text="Resume Link" textFill="#101011">
+      <font>
+         <Font name="Lato Light" size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>

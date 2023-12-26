@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane style="-fx-background-color: #f8f8f8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job_portal.DeciderController">
+
+    <top>
+        <HBox alignment="CENTER" style="-fx-background-color: #2e2828; -fx-padding: 20;">
+            <Text fill="WHITE" text="Welcome to JobNest">
+                <font>
+                    <Font name="Arial" size="18.0" />
+                </font></Text>
+        </HBox>
+    </top>
+    <center>
+<VBox alignment="CENTER" spacing="30" style="-fx-background-color: #ffffff; -fx-padding: 40; -fx-border-radius: 10; -fx-border-color: #2e2828; -fx-border-width: 2;">
+
+
+    <HBox alignment="CENTER" spacing="40">
+
+        <VBox spacing="10" style="-fx-alignment: center;">
+            <ImageView fitHeight="200" fitWidth="200">
+                <Image url="@jobseeker.png" />
+            </ImageView>
+            <Button fx:id="jobSeeker" onAction="#handleJobSeekerButtonClick" style="-fx-font-size: 18; -fx-text-fill: #ffffff; -fx-background-color: #27380b;-fx-padding: 15 30; -fx-background-radius: 5;">
+                Job Seeker
+                <effect>
+                    <DropShadow color="#2ecc71" radius="5" spread="0.2" />
+                </effect>
+            </Button>
+        </VBox>
+        <VBox spacing="10" style="-fx-alignment: center;">
+            <ImageView fitHeight="200" fitWidth="200">
+                <Image url="@employer.png" />
+            </ImageView>
+            <Button fx:id="employer" onAction="#handleJobPosterButtonClick" style="-fx-font-size: 18; -fx-text-fill: #ffffff; -fx-background-color: #571310; -fx-padding: 10;-fx-padding: 15 30; -fx-background-radius: 5;">
+                Employer
+                <effect>
+                    <DropShadow color="#c0392b" radius="5" spread="0.2" />
+                </effect>
+            </Button>
+        </VBox>
+
+    </HBox>
+    <StackPane>
+        <Text fill="#333" text="Explore job opportunities with JobNest!">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font></Text>
+    </StackPane>
+
+</VBox>
+    </center>
+</BorderPane>
